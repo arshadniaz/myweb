@@ -4,7 +4,7 @@ pipeline {
         stage('git repo & clean') {
             steps {
                sh "rm ticketbooking"
-                sh "git https://github.com/arshadniaz/myweb.git"
+                sh "https://github.com/arshadniaz/myweb.git"
                 sh "mvn clean -f ticketbooking"
             }
         }
