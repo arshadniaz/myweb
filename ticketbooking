@@ -1,10 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('git repo & clean') {
-            steps {
-        }
-        stage('install') {
+            stage('install') {
             steps {
                 sh "mvn install -f ticketbooking"
             }
