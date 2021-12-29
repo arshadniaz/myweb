@@ -3,17 +3,17 @@ pipeline {
     stages {
             stage('install') {
             steps {
-                sh "mvn install -f ticketbooking"
+                sh "mvn install ticketbooking"
             }
         }
         stage('test') {
             steps {
-                sh "mvn test -f ticketbooking"
+                sh "mvn test ticketbooking"
             }
         }
         stage('package') {
             steps {
-                sh "mvn package -f ticketbooking"
+                sh "mvn package ticketbooking"
             }
         }
     }
