@@ -1,2 +1,4 @@
 Hi
-eco "hi"
+echo "hi"
+Hi
+echo "hi"
